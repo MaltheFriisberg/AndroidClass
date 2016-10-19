@@ -2,43 +2,41 @@ package com.example.malthe.classexercises;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import SpilLogik.GalgeLogik;
+import Interfaces.ImageViewCommander;
+import Interfaces.UserInputListener;
+import SpilLogik.GameLogic;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    TextView textView;
-    TextView textView2;
-    TextView textView3;
-    EditText editText;
-    ImageView imageView;
-    Button playBtn;
-    GalgeLogik logik;
-
+public class MainActivity extends AppCompatActivity implements UserInputListener, ImageViewCommander {
+    GameLogic gameLogic;
+    private TextView textView;
+    private ImageView imageView;
+    private EditText editText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        textView = (TextView) findViewById(R.id.textView);
-        textView2 = (TextView) findViewById(R.id.textView2);
-        textView3 = (TextView) findViewById(R.id.textView3);
-        editText = (EditText) findViewById(R.id.editText);
-        imageView = (ImageView) findViewById(R.id.imageView3);
-        playBtn = (Button) findViewById(R.id.button);
-        playBtn.setOnClickListener(this);
-        logik = new GalgeLogik(this.imageView, this.textView3);
+        setContentView(R.layout.activity_main2);
+        gameLogic = new GameLogic(textView, imageView);
     }
 
     @Override
-    public void onClick(View v) {
-        if(!logik.play(editText.getText().toString())) {
-            //Restart
-            this.logik = new GalgeLogik(this.imageView, this.textView3);
-        }
+    public void guessNextLetter(String letter) {
+        gameLogic.play(letter);
+    }
+
+    @Override
+    public void passTextField(TextView textField) {
+        this.textView =textField;
+        //gameLogic.setTextView(textField);
+    }
+
+    @Override
+    public void passImageView(ImageView view) {
+        //gameLogic = new GameLogic();
+        this.imageView = view;
+        //gameLogic.setImageView(view);
     }
 }
