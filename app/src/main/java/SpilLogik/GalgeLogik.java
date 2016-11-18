@@ -8,9 +8,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.malthe.classexercises.R;
+import com.example.malthe.classexercises.WordFetcher;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.ExecutionException;
 
 import static android.R.attr.name;
 
@@ -21,7 +23,7 @@ import static android.R.attr.name;
 public class GalgeLogik {
     ImageView imageView;
     TextView textView;
-    private ArrayList<String> words;
+    //private ArrayList<String> words;
     private String word;
     private int lettersGuessed;
     private int guessesMade;
@@ -33,10 +35,17 @@ public class GalgeLogik {
         this.textView = textView;
         textView.setText("");
         imageView.setVisibility(View.INVISIBLE);
-        this.words = new ArrayList<>();
-        AddWords();
-        String result = PickWordRandom();
-        this.word = PickWordRandom();
+        //this.words = new ArrayList<>();
+        //AddWords();
+        //String result = PickWordRandom();
+        WordFetcher asyncTask = new WordFetcher();
+        try {
+            this.word = asyncTask.execute().get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
 
         AddWordToTextView();
 
@@ -112,15 +121,15 @@ public class GalgeLogik {
         }
         this.textView.append(result);
     }
-    private void AddWords() {
+    /*private void AddWords() {
         words.add("bilmotor");
         words.add("cykelanhænger");
         words.add("radiator");
         words.add("søgemaskine");
-    }
-    private String PickWordRandom() {
+    }*/
+    /*private String PickWordRandom() {
        Random rn =  new Random();
         int random = rn.nextInt(words.size());
        return words.get(random);
-    }
+    }*/
 }

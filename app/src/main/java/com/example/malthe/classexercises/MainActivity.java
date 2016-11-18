@@ -1,5 +1,6 @@
 package com.example.malthe.classexercises;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -15,16 +16,31 @@ public class MainActivity extends AppCompatActivity implements UserInputListener
     private TextView textView;
     private ImageView imageView;
     private EditText editText;
+    public static Context contextOfApplication;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        contextOfApplication = getApplicationContext();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         gameLogic = new GameLogic(textView, imageView);
     }
 
     @Override
+    protected void onRestart() {
+        super.onRestart();
+        this.gameLogic = new GameLogic(textView, imageView);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        this.gameLogic = new GameLogic(textView, imageView);
+    }
+
+    @Override
     public void guessNextLetter(String letter) {
         gameLogic.play(letter);
+
     }
 
     @Override
@@ -38,5 +54,8 @@ public class MainActivity extends AppCompatActivity implements UserInputListener
         //gameLogic = new GameLogic();
         this.imageView = view;
         //gameLogic.setImageView(view);
+    }
+    public static Context getContextOfApplication(){
+        return contextOfApplication;
     }
 }
