@@ -1,12 +1,22 @@
 package com.example.malthe.classexercises;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class FrontScreen extends AppCompatActivity implements View.OnClickListener {
+import com.google.gson.Gson;
+
+import java.util.ArrayList;
+
+import Interfaces.IAsyncTaskClient;
+import SpilLogik.WordCache;
+
+import static android.preference.PreferenceManager.getDefaultSharedPreferences;
+
+public class FrontScreen extends AppCompatActivity implements View.OnClickListener, IAsyncTaskClient {
 
     Button btnPlay;
     Button btnGetWords;
@@ -31,10 +41,33 @@ public class FrontScreen extends AppCompatActivity implements View.OnClickListen
             startActivity(intent);
 
         } else {
+            startWordFetch();
             Intent intent = new Intent(this, ChooseWordActivity.class);
             startActivity(intent);
+            //testGetWords();
         }
 
 
+    }
+    private void startWordFetch() {
+        WordFetcher asyncTask = new WordFetcher();
+        asyncTask.execute(this, this);
+    }
+
+    @Override
+    public void notifyWhenDone(String result) {
+
+    }
+    private WordCache testGetWords() {
+        SharedPreferences mPrefs = getDefaultSharedPreferences(this);
+        Gson gson = new Gson();
+        String json = mPrefs.getString("WordCache", "");
+        int x = 1;
+        if(json.length() >0 && !json.equals("")) {
+
+            WordCache state = gson.fromJson(json, WordCache.class);
+            return state;
+        }
+        return new WordCache(new ArrayList<String>());
     }
 }

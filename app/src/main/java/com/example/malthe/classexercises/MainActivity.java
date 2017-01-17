@@ -1,6 +1,7 @@
 package com.example.malthe.classexercises;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -22,19 +23,19 @@ public class MainActivity extends AppCompatActivity implements UserInputListener
         contextOfApplication = getApplicationContext();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        gameLogic = new GameLogic(textView, imageView);
+        gameLogic = new GameLogic(textView, imageView, this);
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        this.gameLogic = new GameLogic(textView, imageView);
+        this.gameLogic = new GameLogic(textView, imageView, this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        this.gameLogic = new GameLogic(textView, imageView);
+        this.gameLogic = new GameLogic(textView, imageView, this);
     }
 
     @Override
@@ -58,4 +59,8 @@ public class MainActivity extends AppCompatActivity implements UserInputListener
     public static Context getContextOfApplication(){
         return contextOfApplication;
     }
+
+    /*public static SharedPreferences getSharedPrefs() {
+        SharedPreferences mPrefs = getPreferences(MODE_PRIVATE);
+    }*/
 }

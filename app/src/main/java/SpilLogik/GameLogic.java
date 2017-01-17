@@ -33,13 +33,15 @@ public class GameLogic implements IAsyncTaskClient{
     private boolean secondTry;
     //private List<String> words;
     private String word;
+    private Context context;
 
     //this constructor is called when game is resumed
     public GameLogic() {
 
     }
     //This constructor starts a new game
-    public GameLogic(TextView textView, ImageView imageView) {
+    public GameLogic(TextView textView, ImageView imageView, Context context) {
+        this.context = context;
         this.textView = textView;
         this.imageView = imageView;
 
@@ -59,7 +61,7 @@ public class GameLogic implements IAsyncTaskClient{
         } else {
             //AddWords();
             WordFetcher asyncTask = new WordFetcher();
-            asyncTask.execute(this);
+            asyncTask.execute(this, this.context);
         }
 
 

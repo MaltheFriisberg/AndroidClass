@@ -3,6 +3,15 @@
 
     <item
         is-multidex="false"
+        jar="/home/malthe/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_891d68ac2a047643f441db090a954e100d3129d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -21,6 +30,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_723523958fc921c92e10a1423edb231ee545d0cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="false"
         optimize="true"
@@ -30,12 +48,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_fe596d78f98796ff852bd2c0522d3c8ceeb8b031.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_ea3ab2ecd4f68033e825e15730055ae7903195a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malthe/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/gson-2.7_0c5353bb2ccfc13720d5993e6739de7859765de1.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
         <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_d08ac1c73c83c7c6315fce3962a530bf6e5f50b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_a6a2f036fc6d31c03ebc7dbd5018ca82caad2a9a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -54,6 +108,15 @@
         revision="24.0.3"
         sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
         <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_3b58a1baf0fcb5a75847a85a9de88ec4c8a823b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_37124cda99933761c4675773d2e1f742d94c774b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -81,60 +144,6 @@
         revision="24.0.3"
         sha1="867dad63c33388ff8c7644b236579355036d075f">
         <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_14f9f4f1efa029fcf69cf2eaab3fb752ada2b9a0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/malthe/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.3"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_891d68ac2a047643f441db090a954e100d3129d7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.3"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_723523958fc921c92e10a1423edb231ee545d0cf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_fe596d78f98796ff852bd2c0522d3c8ceeb8b031.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.3"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_ea3ab2ecd4f68033e825e15730055ae7903195a5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_a6a2f036fc6d31c03ebc7dbd5018ca82caad2a9a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/home/malthe/AndroidStudioProjects/AndroidClass/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_37124cda99933761c4675773d2e1f742d94c774b.jar" />
     </item>
 
 </items>
