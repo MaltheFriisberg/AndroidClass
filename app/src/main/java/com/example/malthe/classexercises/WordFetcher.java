@@ -1,6 +1,8 @@
 package com.example.malthe.classexercises;
 
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.preference.PreferenceManager;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -57,6 +59,7 @@ public class WordFetcher extends AsyncTask<IAsyncTaskClient, String, String> {
         this.client = clients[0];
         try {
             hentOrdFraDr();
+            //SharedPreferences manager = PreferenceManager.getDefaultSharedPreferences(client);
         } catch (Exception e) {
             e.printStackTrace();
         }
